@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char BrotliKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BrotliKit/PublicHeader.h>
 
-
+#import "LMBrotliCompression.h"
+#import "LMBrotliCompressor.h"
+#import "NSData+BrotliCompression.h"
