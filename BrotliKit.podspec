@@ -6,12 +6,11 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/luckymarmot/BrotliKit'
   s.authors      = { 'Paw' => 'https://paw.cloud' }
   s.source       = { :git => 'https://github.com/luckymarmot/BrotliKit.git', :tag => s.version }
-  s.documentation_url = 'https://github.com/luckymarmot/BrotliKit'
 
   s.ios.deployment_target  = '8.0'
   s.osx.deployment_target  = '10.8'
   s.requires_arc = true
 
   s.source_files = 'BrotliKit/*.{h,m,c}', 'Dependencies/brotli/c/common/*.c', 'Dependencies/brotli/c/dec/*.c', 'Dependencies/brotli/c/enc/*.c'
-  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_TARGET_SRCROOT)/Dependencies/brotli/c/include"' }
+  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_TARGET_SRCROOT)/Dependencies/brotli/c/include"', 'CLANG_WARN_UNREACHABLE_CODE' => false }
 end
