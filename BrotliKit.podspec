@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target  = '10.8'
   s.requires_arc = true
 
-  s.source_files = 'BrotliKit/*.{h,m,c}', 'Dependencies/brotli/c/common/*.{c,h}', 'Dependencies/brotli/c/dec/*.{c,h}', 'Dependencies/brotli/c/enc/*.{c,h}'
+  s.source_files = 'BrotliKit/*.{h,m,c}', 'Dependencies/brotli/c/common/*.{c,h}', 'Dependencies/brotli/c/dec/*.{c,h}', 'Dependencies/brotli/c/enc/*.{c,h}', 'Dependencies/brotli/c/include/brotli/*.h'
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_TARGET_SRCROOT)/Dependencies/brotli/c/include"', 'CLANG_WARN_UNREACHABLE_CODE' => false }
 end
