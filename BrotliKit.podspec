@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = 'A Swift and Objective-C category for Brotli compression.'
   s.homepage     = 'https://github.com/luckymarmot/BrotliKit'
   s.authors      = { 'Paw' => 'https://paw.cloud' }
-  s.source       = { :git => 'https://github.com/luckymarmot/BrotliKit.git', :tag => s.version }
+  s.source       = { :git => 'https://github.com/luckymarmot/BrotliKit.git', :tag => s.version, :submodules => true }
 
   s.ios.deployment_target  = '8.0'
   s.osx.deployment_target  = '10.8'
