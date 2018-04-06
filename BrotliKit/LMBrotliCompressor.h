@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_SWIFT_NAME(BrotliCompressor)
 @interface LMBrotliCompressor : NSObject
 
 @property (class, nonatomic, assign, readonly) NSInteger defaultQuality;
